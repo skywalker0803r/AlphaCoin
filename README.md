@@ -1,0 +1,2 @@
+# AlphaCoin
+AlphaCoin

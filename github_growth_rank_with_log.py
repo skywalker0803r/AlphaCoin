@@ -170,7 +170,7 @@ def Google_Search_github_repo(query, limit=5):
     if data and 'items' in data:
         for item in data['items']:
             link = item.get('link')
-            if link and "github.com" in link and "/tree/" not in link and "/blob/" not in link and "/wiki/" not in link:
+            if link and "github.com" in link and "/tree/" not in link and "/blob/" not in link and "/wiki/" not in link and "/topics/" not in link:
                 # 嘗試過濾掉非 repo 根目錄的連結
                 # 並且確保不是 Gist 或 Pages 這種
                 parsed_url = urlparse(link)
